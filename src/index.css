@@ -1,13 +1,94 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  margin:0;
+  padding: 0;
+  font-family:'Courier New', Courier, monospace
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+video{
+  width: 100%;
+  height: 100%;
+  object-fit:cover
+}
+
+h1{
+  font-size: 72px;
+}
+
+.content{
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+.info{
+  position: absolute;
+  padding-left: 50%;
+  width: 40%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.profilepicture{
+  width: 230px;
+  height: 377;
+  border-radius: 50%;
+  display:flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid #015475;
+  filter: drop-shadow(0 0 8px #000000);
+}
+
+
+.navbar{
+  list-style-type: none;
+  margin: 0;
+  padding-left: 30%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+}
+li{
+  float: left;
+  border-right: 1px solid #bbb;
+}
+a{
+  display: block;
+  padding: 8px;
+  background-color: transparent;
+  color: white;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+}
+li a:hover{
+  background-color: rgb(8, 118, 208);
+}
+.logo{
+  scale: 0.6;
 }
